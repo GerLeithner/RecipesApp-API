@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const recipeRoutes = require("./Recipe_routes");
+const recipeRoutes = require("./recipe_routes");
 const dietRoutes = require("./diet_routes");
 const dishTypesRoutes = require("./dishTypes_routes");
 
