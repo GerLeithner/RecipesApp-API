@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 const { Recipe, Diet } = require("../db.js");
 const { API_KEY }= process.env;
 
-const limit = 5;
+const limit = 2;
 const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=${limit}`;
 
 
