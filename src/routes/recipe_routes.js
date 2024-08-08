@@ -58,10 +58,10 @@ router.get("/", async(req,res) => {
         if(!name) {
             let apiRecipes = await getApiRecipes();
             let dbRecipes = await getDbRecipes();
-            if(apiRecipes.length && dbRecipes.length) {
+            if(apiRecipes?.length && dbRecipes?.length) {
                 recipes = [...apiRecipes, ...dbRecipes]
             }
-            else if(!apiRecipes.length) recipes = dbRecipes;
+            else if(!apiRecipes?.length) recipes = dbRecipes;
             else recipes = apiRecipes;  
             res.status(200).json(recipes); 
         }
